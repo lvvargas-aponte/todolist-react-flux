@@ -3,14 +3,14 @@ import React from 'react'
 import {createRoot} from 'react-dom/client'
 
 //include your index.scss file into the bundle
-import "../styles/index.css";
+import "../styles/index.scss";
 
 //import your own components
-import Layout from './layout.js'
+import TodoList from './component/TodoList.jsx';
 
 //
 const root = createRoot(document.querySelector("#app"))
 
 //render your react application
-root.render(<Layout/>)
+root.render(<TodoList/>)
 
